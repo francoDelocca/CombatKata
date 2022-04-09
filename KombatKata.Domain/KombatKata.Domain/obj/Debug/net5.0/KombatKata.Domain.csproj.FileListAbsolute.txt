@@ -1,0 +1,15 @@
+C:\Users\Franco\source\repos\KombatKata.Domain\KombatKata.Domain\bin\Debug\net5.0\KombatKata.Domain.exe
+C:\Users\Franco\source\repos\KombatKata.Domain\KombatKata.Domain\bin\Debug\net5.0\KombatKata.Domain.deps.json
+C:\Users\Franco\source\repos\KombatKata.Domain\KombatKata.Domain\bin\Debug\net5.0\KombatKata.Domain.runtimeconfig.json
+C:\Users\Franco\source\repos\KombatKata.Domain\KombatKata.Domain\bin\Debug\net5.0\KombatKata.Domain.runtimeconfig.dev.json
+C:\Users\Franco\source\repos\KombatKata.Domain\KombatKata.Domain\bin\Debug\net5.0\KombatKata.Domain.dll
+C:\Users\Franco\source\repos\KombatKata.Domain\KombatKata.Domain\bin\Debug\net5.0\ref\KombatKata.Domain.dll
+C:\Users\Franco\source\repos\KombatKata.Domain\KombatKata.Domain\bin\Debug\net5.0\KombatKata.Domain.pdb
+C:\Users\Franco\source\repos\KombatKata.Domain\KombatKata.Domain\obj\Debug\net5.0\KombatKata.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Franco\source\repos\KombatKata.Domain\KombatKata.Domain\obj\Debug\net5.0\KombatKata.Domain.AssemblyInfoInputs.cache
+C:\Users\Franco\source\repos\KombatKata.Domain\KombatKata.Domain\obj\Debug\net5.0\KombatKata.Domain.AssemblyInfo.cs
+C:\Users\Franco\source\repos\KombatKata.Domain\KombatKata.Domain\obj\Debug\net5.0\KombatKata.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Franco\source\repos\KombatKata.Domain\KombatKata.Domain\obj\Debug\net5.0\KombatKata.Domain.dll
+C:\Users\Franco\source\repos\KombatKata.Domain\KombatKata.Domain\obj\Debug\net5.0\ref\KombatKata.Domain.dll
+C:\Users\Franco\source\repos\KombatKata.Domain\KombatKata.Domain\obj\Debug\net5.0\KombatKata.Domain.pdb
+C:\Users\Franco\source\repos\KombatKata.Domain\KombatKata.Domain\obj\Debug\net5.0\KombatKata.Domain.genruntimeconfig.cache
