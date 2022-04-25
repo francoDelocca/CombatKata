@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Franco\\source\\repos\\KombatKata.Domain\\KombatKata.Domain\\KombatKata.Domain.csproj": {}
+    "E:\\Unity\\CombatKata\\KombatKata.Domain\\KombatKata.Domain\\KombatKata.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Franco\\source\\repos\\KombatKata.Domain\\KombatKata.Domain\\KombatKata.Domain.csproj": {
+    "E:\\Unity\\CombatKata\\KombatKata.Domain\\KombatKata.Domain\\KombatKata.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Franco\\source\\repos\\KombatKata.Domain\\KombatKata.Domain\\KombatKata.Domain.csproj",
+        "projectUniqueName": "E:\\Unity\\CombatKata\\KombatKata.Domain\\KombatKata.Domain\\KombatKata.Domain.csproj",
         "projectName": "KombatKata.Domain",
-        "projectPath": "C:\\Users\\Franco\\source\\repos\\KombatKata.Domain\\KombatKata.Domain\\KombatKata.Domain.csproj",
+        "projectPath": "E:\\Unity\\CombatKata\\KombatKata.Domain\\KombatKata.Domain\\KombatKata.Domain.csproj",
         "packagesPath": "C:\\Users\\Franco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Franco\\source\\repos\\KombatKata.Domain\\KombatKata.Domain\\obj\\",
+        "outputPath": "E:\\Unity\\CombatKata\\KombatKata.Domain\\KombatKata.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
         }
       }
     }

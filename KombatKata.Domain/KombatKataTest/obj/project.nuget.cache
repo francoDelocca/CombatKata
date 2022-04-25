@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XsQ6QhXyBPW15EK0Ly9QaI9cKS4XFYd6ROpSSHHBdZ2SAuhqyeoRcXXmQOOgRe3UkGR3fkDJWwF26Su83zx2ww==",
+  "dgSpecHash": "COYwLSJQ0AetW4Ne8VgImH2PM3XbWws1MEaK4TExB5+Ouood2X0UgKRmTp5/o/kcnjCPpFAYQSRpHLYBhaduNg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Franco\\source\\repos\\KombatKata.Domain\\KombatKataTest\\KombatKataTest.csproj",
+  "projectFilePath": "E:\\Unity\\CombatKata\\KombatKata.Domain\\KombatKataTest\\KombatKataTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Franco\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\Franco\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",
