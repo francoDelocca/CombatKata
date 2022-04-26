@@ -19,8 +19,8 @@ namespace KombatKata.Domain.Domain
         private int _heal;
 
         private Attack Attack { get; set; }
+        private Heal Heal { get; set; }
         public Health Health { get; private set; }
-        public Heal Heal { get; private set; }
         public Factions Factions { get; private set; }
 
         public Character(int level = INITIAL_LEVEL)
