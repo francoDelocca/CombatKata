@@ -14,14 +14,10 @@ namespace KombatKata.Domain.Domain
                 target.Health.ReceiveHeal(amount);
         }
 
-        private bool TargetIsAlly(Character target, Character healer)
-        {
-            return healer.Factions.IsAlly(target);
-        }
+        private bool TargetIsAlly(Character target, Character healer) =>
+            healer.Factions.IsAlly(target);
 
-        private bool IsSelfHeal(Character target, Character healer)
-        {
-            return target.Equals(healer);
-        }
+        private bool IsSelfHeal(Character target, Character healer) =>
+            target.Equals(healer);
     }
 }

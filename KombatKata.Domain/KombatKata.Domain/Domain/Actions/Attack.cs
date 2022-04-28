@@ -12,6 +12,13 @@ namespace KombatKata.Domain.Domain
         private const int DAMAGE_INCREASER_PERCENTAGE = 150;
         private const int DAMAGE_DEFAULT_PERCENTAGE = 100;
 
+        private IRandom randomService;
+
+        public Attack(IRandom randomService)
+        {
+            this.randomService = randomService;
+        }
+
         public void Execute(Character target, Character attacker)
         {
             if (TargetIsAlly(target, attacker))
@@ -20,7 +27,7 @@ namespace KombatKata.Domain.Domain
             if (AttackerIsInRange(target, attacker))
                 return;
 
-            target.Health.ReceiveDamage(CalculateDamage(target, attacker));
+            target.ReceiveDamage(CalculateDamage(target, attacker));
         }
 
         private bool TargetIsAlly(Character target, Character attacker)
@@ -35,11 +42,17 @@ namespace KombatKata.Domain.Domain
 
         private int CalculateDamage(Character target, Character attacker)
         {
-            int percentage = GetDamagePercentage(target, attacker);
+            return CalculateDamageIfCritical(attacker) * GetDamagePercentage(target, attacker) / 100;
+        }
 
-            var calculatedDamage = attacker.GetDamage() * percentage / 100;
+        private int CalculateDamageIfCritical(Character attacker)
+        {
+            return IsCritical() ? attacker.GetDamage() * 2 : attacker.GetDamage();
+        }
 
-            return calculatedDamage;
+        private bool IsCritical()
+        {
+            return randomService.GetRandomValue() >= 80;
         }
 
         private int GetDamagePercentage(Character target, Character attacker)

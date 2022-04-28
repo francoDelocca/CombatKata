@@ -8,7 +8,6 @@ namespace KombatKata.Domain.Domain
 {
     public class Character
     {
-
         private const int INITIAL_LEVEL = 1;
         private const int CHARACTER_DAMAGE = 50;
         private const int CHARACTER_HEAL = 25;
@@ -23,16 +22,17 @@ namespace KombatKata.Domain.Domain
         public Health Health { get; private set; }
         public Factions Factions { get; private set; }
 
-        public Character(int level = INITIAL_LEVEL)
+        public Character(int level = INITIAL_LEVEL, IRandom randomService = null)
         {
             _damage = CHARACTER_DAMAGE;
             _heal = CHARACTER_HEAL;
             _level = level;
 
-            Attack = new Attack();
+            Attack = new Attack(randomService);
             Heal = new Heal();
             Health = new Health();
             Factions = new Factions();
+
         }
 
         public int GetDamage()
@@ -59,7 +59,6 @@ namespace KombatKata.Domain.Domain
         {
             if (target != this)
                 Attack.Execute(target, this);
-
         }
 
         public void DoHeal(Character target)
@@ -82,5 +81,9 @@ namespace KombatKata.Domain.Domain
             Factions.Remove(faction);
         }
 
+        public void ReceiveDamage(int value)
+        {
+            Health.ReceiveDamage(value);
+        }
     }
 }

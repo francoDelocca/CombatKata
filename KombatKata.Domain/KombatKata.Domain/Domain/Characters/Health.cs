@@ -24,7 +24,7 @@ namespace KombatKata.Domain.Domain
 
         private bool CheckIfIsAlive()
         {
-            return Amount <= MINIMUM_HEALTH ? false : true;
+            return !(Amount <= MINIMUM_HEALTH);
         }
 
         public void ReceiveHeal(int amount)

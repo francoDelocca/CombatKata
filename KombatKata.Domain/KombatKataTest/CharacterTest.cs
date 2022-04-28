@@ -13,22 +13,30 @@ namespace KombatKataTest
         private const int MEDIUM_LEVEL = 5;
         private const int HIGH_LEVEL = 10;
 
+        private const int NO_CRITICAL_HIT = 50;
+        private const int CRITICAL_HIT = 90;
+
         private Character _character;
+        private Character _characterCriticalHit;
         private Character _dummyCharacter;
         private Character _dummyCharacterHighLevel;
         private Character _dummyCharacterHighestLevel;
         private MeleeFighter _meleeFighter;
         private RangedFighter _rangedFighter;
 
+        private IRandom randomServiceTest;
+
         [SetUp]
         public void SetUp()
         {
-            _character = new(INITIAL_LEVEL);
-            _meleeFighter = new();
-            _rangedFighter = new();
-            _dummyCharacter = new(INITIAL_LEVEL);
-            _dummyCharacterHighLevel = new(MEDIUM_LEVEL);
-            _dummyCharacterHighestLevel = new(HIGH_LEVEL);
+            randomServiceTest = new RandomServiceTest(NO_CRITICAL_HIT);
+            _character = new(INITIAL_LEVEL, randomServiceTest);
+            _characterCriticalHit = new Character(INITIAL_LEVEL, new RandomServiceTest(CRITICAL_HIT));
+            _meleeFighter = new(INITIAL_LEVEL, randomServiceTest);
+            _rangedFighter = new(INITIAL_LEVEL, randomServiceTest);
+            _dummyCharacter = new(INITIAL_LEVEL, randomServiceTest);
+            _dummyCharacterHighLevel = new(MEDIUM_LEVEL, randomServiceTest);
+            _dummyCharacterHighestLevel = new(HIGH_LEVEL, randomServiceTest);
         }
 
         [Test]
@@ -234,6 +242,14 @@ namespace KombatKataTest
 
             Assert.AreEqual(expectedHealth, _dummyCharacter.GetHealth());
 
+        }
+
+        [Test]
+        public void CharacterShouldDealCriticalDamage()
+        {
+            _characterCriticalHit.DealDamage(_dummyCharacter);
+
+            Assert.AreEqual(INITIAL_HEALTH - (CHARACTER_DAMAGE * 2), _dummyCharacter.GetHealth());
         }
     }
 }

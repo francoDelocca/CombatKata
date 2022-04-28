@@ -10,6 +10,10 @@ namespace KombatKata.Domain.Domain
     {
         private const int MELEE_FIGHTER_MAX_RANGE = 2;
 
+        public MeleeFighter(int level = 1, IRandom randomService = null) : base(level, randomService)
+        {
+        }
+
         public override int GetMaxRange()
         {
             return MELEE_FIGHTER_MAX_RANGE;
